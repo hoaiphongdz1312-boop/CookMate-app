@@ -1,0 +1,6 @@
+# Copy file này thành key.properties (cùng thư mục) rồi điền mật khẩu thật.
+# key.properties KHÔNG được commit (đã có trong android/.gitignore).
+storeFile=D:/keys/cookmate-release.jks
+storePassword=<mật khẩu keystore>
+keyAlias=cookmate
+keyPassword=<mật khẩu key>
