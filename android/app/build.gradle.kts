@@ -55,6 +55,10 @@ android {
                 signingConfigs.getByName("release")
             else
                 signingConfigs.getByName("debug")
+            // Tắt R8: Vosk (qua JNA), TFLite và ML Kit gọi class Java từ code native,
+            // R8 xóa/đổi tên các class đó nên giọng nói và khuôn mặt hỏng ở bản release
+            isMinifyEnabled = false
+            isShrinkResources = false
         }
     }
 }
